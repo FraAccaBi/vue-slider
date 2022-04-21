@@ -16,16 +16,17 @@
 
             <div class="miniature col-30">
                 <img :src=element.image v-for="element in content">
+                <div class="arrows">
+                    <div class="next" @click="nextImage">
+                        <i class="fas fa-chevron-circle-up fa-lg"></i>
+                    </div>
+                    <div class="prev" @click="prevImage">
+                        <i class="fas fa-chevron-circle-down fa-lg"></i>
+                    </div>
+                </div>
             </div>
 
-            <div class="arrows">
-                <div class="next">
-                    <i class="fas fa-chevron-circle-up fa-lg"></i>
-                </div>
-                <div class="prev">
-                    <i class="fas fa-chevron-circle-down fa-lg"></i>
-                </div>
-            </div>
+            
 
             <div class="text">
                 <h1 class="title"> {{content[index].title}} </h1>

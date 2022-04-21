@@ -11,26 +11,32 @@
     justify-content: center;
     padding-top: 1rem;
     margin:0 auto;
+    align-items: stretch;
 }
 .miniature{
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 .col-70{
    flex-basis: calc((80% / 12) * 8);
-   height: 500px;
+   height: 394px;
+}
+.col-70>img{
+    width: 100%;
 }
 .col-30>img{
     flex-basis: calc((80% / 12) * 2);
-    height: calc(500px / 5);
+    height: calc(394px / 5);
+    width: 100%;
 }
 .arrows{
     position: absolute;
-    right: 7.5rem;
+    right: 5rem;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    height: 500px;
+    height: 394px;
     color: white;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -40,7 +46,7 @@
 }
 .text{
     position: absolute;
-    bottom: 15rem;
+    bottom: 10rem;
     right:18rem;
     text-align: right;
     color: white;
