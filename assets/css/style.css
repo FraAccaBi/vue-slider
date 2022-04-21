@@ -3,3 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+.container{
+    display: flex;
+    width: 80%;
+}
+.miniature{
+    display: flex;
+    flex-direction: column;
+}
+.col-70{
+    max-width: 70%;
+}
+.col-30>img{
+    max-width: 28%;
+}

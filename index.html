@@ -10,10 +10,13 @@
 <body>
     
     <div id="app">
-        <img :src=content[index].image alt="">
-        <div class="miniature">
-            <img :src=element.image v-for="element in content">
+        <div class="container">
+            <img class="col-70"  :src=content[index].image alt="">
+            <div class="miniature col-30">
+                <img :src=element.image v-for="element in content">
+            </div>
         </div>
+        
     </div>
 
     <script src='https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js'></script>
