@@ -38,3 +38,11 @@
 .prev, .next{
     cursor: pointer;
 }
+.text{
+    position: absolute;
+    bottom: 15rem;
+    right:18rem;
+    text-align: right;
+    color: white;
+    padding-left: 4rem;
+}
