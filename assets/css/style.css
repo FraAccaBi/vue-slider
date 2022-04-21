@@ -21,6 +21,8 @@
 .col-70{
    flex-basis: calc((80% / 12) * 8);
    height: 394px;
+   width: 700px;
+   object-fit: contain;
 }
 .col-70>img{
     width: 100%;

@@ -49,7 +49,7 @@ const app = new Vue({
         prevImage(){
             console.log('prev img');
             if (this.index === 0) {
-                this.index = this.movie.images.length
+                this.index = this.content.length
             }
             this.index--
         },
@@ -57,7 +57,7 @@ const app = new Vue({
         nextImage(){
             console.log('next img');
             this.index ++
-            if(this.index === this.movie.images.length) {
+            if(this.index === this.content.length) {
                 this.index = 0;
             }
         }
