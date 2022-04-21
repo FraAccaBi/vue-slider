@@ -9,6 +9,12 @@
 </head>
 <body>
     
+    <div id="app">
+        <img :src=content[index].image alt="">
+        <div class="miniature">
+            <img :src=image v-for="image in content">
+        </div>
+    </div>
 
     <script src='https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js'></script>
     <script src="./assets/js/app.js"></script>
