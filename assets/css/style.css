@@ -5,15 +5,36 @@
 }
 .container{
     display: flex;
-    width: 80%;
+    width: 1155px;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    padding-top: 1rem;
+    margin:0 auto;
 }
 .miniature{
     display: flex;
     flex-direction: column;
 }
 .col-70{
-    max-width: 70%;
+   flex-basis: calc((80% / 12) * 8);
+   height: 500px;
 }
 .col-30>img{
-    max-width: 28%;
+    flex-basis: calc((80% / 12) * 2);
+    height: calc(500px / 5);
+}
+.arrows{
+    position: absolute;
+    right: 7.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 500px;
+    color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.prev, .next{
+    cursor: pointer;
 }

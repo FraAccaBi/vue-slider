@@ -6,15 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue Slider</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css' integrity='sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==' crossorigin='anonymous' referrerpolicy='no-referrer' />
 </head>
 <body>
     
     <div id="app">
         <div class="container">
             <img class="col-70"  :src=content[index].image alt="">
+
             <div class="miniature col-30">
                 <img :src=element.image v-for="element in content">
             </div>
+
+            <div class="arrows">
+                <div class="next">
+                    <i class="fas fa-chevron-circle-up fa-lg"></i>
+                </div>
+                <div class="prev">
+                    <i class="fas fa-chevron-circle-down fa-lg"></i>
+                </div>
+            </div>
+
+
         </div>
         
     </div>
