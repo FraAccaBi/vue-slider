@@ -13,32 +13,34 @@
     margin:0 auto;
     align-items: stretch;
 }
+.row{
+    height: 600px;
+    width: 100%;
+    
+}
 .miniature{
     display: flex;
     flex-direction: column;
     position: relative;
 }
-.col-70{
-   flex-basis: calc((80% / 12) * 8);
-   height: 394px;
-   width: 700px;
-   object-fit: contain;
+.col-9{
+   height: 600px;
+   
 }
-.col-70>img{
+.col-9>img{
     width: 100%;
 }
-.col-30>img{
-    flex-basis: calc((80% / 12) * 2);
-    height: calc(394px / 5);
+.col-3>img{
+    height: calc(600px / 5);
     width: 100%;
 }
 .arrows{
     position: absolute;
-    right: 5rem;
+    right: 8rem;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    height: 394px;
+    height: 600px;
     color: white;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -48,9 +50,12 @@
 }
 .text{
     position: absolute;
-    bottom: 10rem;
-    right:18rem;
+    bottom: 4rem;
+    right:19rem;
     text-align: right;
     color: white;
     padding-left: 4rem;
+}
+.text>p{
+    padding-left: 22rem;
 }
