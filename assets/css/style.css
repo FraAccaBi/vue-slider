@@ -22,6 +22,10 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    
+}
+.miniature>img{
+    filter: brightness(0.5);
 }
 .col-9{
    height: 600px;
@@ -58,4 +62,8 @@
 }
 .text>p{
     padding-left: 22rem;
+}
+.active{
+    filter: none;
+    border: 2px solid rgb(105, 30, 68);
 }

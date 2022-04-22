@@ -12,8 +12,8 @@
 <body>
     
     <div id="app">
-        <div class="container">
-            <div class="row gx-0">
+        <div class="container" >
+            <div class="row gx-0" @mouseover="pauseSlider" @mouseout="startSlider">
                 <img class="col-9"  :src=content[index].image alt="">
 
                 <div class="miniature col-3">
